@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Ilya Govorukha](https://up.htmlacademy.ru/htmlcss/36/user/2259269).
-* Наставник: `Неизвестно`.
+* Наставник: [Владимир Вавщик](https://htmlacademy.ru/profile/id1610171).
 
 ---
 
