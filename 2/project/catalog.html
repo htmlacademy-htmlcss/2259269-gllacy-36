@@ -14,7 +14,7 @@
       <nav class="navigation-header" aria-label="основная">
         <ul class="navigation-list">
           <li class="navigation-list-item">
-            <button class="navigation-link navigation-link-type-button">
+            <button class="navigation-link navigation-link-type-button" type="button">
               Каталог
             </button>
           </li>
@@ -49,7 +49,6 @@
     </header>
     <main class="main-inner">
       <header class="inner-header">
-        <h1 class="visually-hidden">Каталог</h1>
         <ol class="breadcrumbs-list">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -61,10 +60,10 @@
             <a class="breadcrumbs-item">Сливочное мороженое</a>
           </li>
         </ol>
-        <h2 class="inner-header-title">Сливочное мороженое</h2>
+        <h1 class="inner-header-title">Сливочное мороженое</h2>
       </header>
       <section class="catalog-products">
-        <h2 class="catalog-title">Каталог списка с товарами</h2>
+        <h2 class="visually-hidden">Фильтры для товаров</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="visually-hidden catalog-filter-title">
@@ -118,9 +117,10 @@
         </form>
       </section>
       <section class="catalog">
+        <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="product-list">
           <li class="product-card">
-            <img class="product-card-image" src="#" alt="мороженое с малиной">
+            <img class="product-card-image" src="#" alt="Мороженое с малиной">
             <h3 class="product-name">Малинка</h3>
             <p class="product-decription">Сливочное мороженое с малиновым джемом</p]>
             <div class="product-other">
@@ -314,11 +314,11 @@
         </li>
       </ul>
     </nav>
-    <section class="footer-logo">
+    <div class="footer-logo">
       <img src="#" class="html-logo" alt="Логотип академии">
       <p class="footer-caption">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">.html academy</a> © 2021
       </p>
-    </section>
+    </div>
   </footer>
 
 </html>
