@@ -1,0 +1,486 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+html{
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #FEAFC3;
+  color:#2D3440;
+}
+
+.main-container{
+  flex-grow: 1;
+}
+
+.page-container{
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.button{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: inherit;
+  background-color: #FCFCFC;
+  text-decoration: none;
+}
+
+.social-button{
+  background: #FCFCFC;
+  color:#2D3440;
+  text-decoration: none;
+}
+
+.button-submit{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #FCFCFC;
+  background-color: #FF2F64;
+  text-decoration: none;
+}
+
+/* Page-header */
+.page-header {
+  color: #2D3440;
+}
+
+.navigation-header{
+  display: flex;
+  flex-direction: row;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.logo-header{
+  margin-right: 32px;
+}
+
+.navigation-list{
+  width: 638px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user{
+  max-width: 267px;
+  margin-left: auto;
+}
+
+.contacts-phone-container{
+  max-width: 148px;
+  margin-left: auto;
+}
+
+.navigation-link {
+  color:inherit;
+  font-family: "Inter", sans-serif;
+  line-height: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navigation-button {
+  color:inherit;
+  font-family: "Inter", sans-serif;
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.contacts-phone-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+.user-panel-button {
+  color:inherit;
+  font-family: "Inter", sans-serif;
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* slider */
+.slider-title{
+  font-weight: 900;
+  font-size: 36px;
+  font-style: normal;
+  line-height: 46px;
+}
+.slider-description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.slider-list{
+margin: 0;
+padding: 0;
+text-align: left;
+color: #2D3440;
+}
+
+/* banner */
+
+.banner-list{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.banner-item{
+  width:570px;
+}
+
+.banner-item:first-child{
+  background: #FF7799 url(../images/background-berry.png) no-repeat 351px;
+}
+
+.banner-item:last-child{
+  background: #FF7799 url(../images/background-marshmallow.png) no-repeat 351px;
+}
+
+.banner-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.banner-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+
+/* product */
+
+.product-list{
+  width: 1170px;
+  margin: 0;
+  padding: 0;
+}
+
+.product-card {
+  width: 270px;
+  background: #FCFCFC;
+}
+
+.product-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.product-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.product-description {
+  font-size: 16px;
+  text-align: center;
+  color: #565C66;
+}
+
+.product-price {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.cart-button {
+  background: #FF2F64;
+  color:#FCFCFC;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* advantages */
+
+.advantages{
+background-color:#FFFFFF;
+}
+
+.advantages-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.advantages-description {
+  color: #565C66;
+}
+
+.advantages-list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1042px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.advantages-item{
+  width: 506px;
+}
+/* additional */
+
+.additional-container{
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.additional-item{
+  width: 570px;
+}
+
+.news{
+  background: url(../images/background-news.png) no-repeat;
+}
+
+.news-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.news-caption {
+  line-height: 20px;
+  color: #565C66;
+}
+
+.email-appoitment{
+  background-color: #FFFFFF;
+}
+
+.appoitment-description {
+  color: #565C66;
+}
+
+/* delivery */
+
+.delivery-container{
+  display: flex;
+  width: 1170;
+  margin:0;
+  padding: 0;
+  background: url(../images/background-delivery.png) no-repeat;
+}
+
+.delivery-section{
+  width: 371px;
+  margin: 0 auto;
+}
+
+.delivery-form-section{
+  background-color: #FCFCFC;
+  width: 500px;
+  margin-left: auto;
+}
+
+.delivery-title{
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+}
+
+.delivery-description {
+  color: #565C66;
+}
+
+/* address */
+
+.address-container{
+  width: 1170px;
+  background: url(../images/background-contacts.jpg);
+}
+
+.contacts{
+  background-color: #FCFCFC;
+  margin-left: 64px;
+  width: 343px;
+}
+
+.contacts-description {
+  color: #565C66;
+}
+
+.contacts-adress {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.contacts-phone {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.contacts-inscription{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565C66;
+}
+
+/* page-footer */
+
+.page-footer a{
+  color:#2D3440;
+}
+
+.page-footer-container{
+  display: flex;
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.social-footer{
+  max-width: 220px;
+  margin-right: auto;
+}
+
+.footer-navigation-list{
+  max-width: 356px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-logo{
+  max-width: 200px;
+  margin-left: auto;
+}
+
+.footer-navigation-link{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.suppliers{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.footer-caption{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* catalog */
+
+.inner-header-title{
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.catalog-products{
+  display: flex;
+  width: 823px;
+}
+
+.catalog-filter-container{
+  display: flex;
+  width: 805px;
+}
+
+.catalog-filter-button{
+  margin-left: 16px;
+}
+
+/* breadcrumbs */
+
+.breadcrumbs{
+  color:inherit
+}
+
+.breadcrumbs-link{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.breadcrumbs-item:last-child{
+  text-decoration: underline;
+}
+
+.control-label{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* pagination */
+
+.pagination-container{
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.pagination-link{
+  line-height: 20px;
+}
+
+.pagination-current{
+  background-color:#FCFCFC;
+}
