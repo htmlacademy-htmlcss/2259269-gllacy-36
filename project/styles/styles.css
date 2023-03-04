@@ -22,12 +22,29 @@
   font-display: swap;
 }
 
+html{
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
   background-color: #FEAFC3;
   color:#2D3440;
+}
+
+.main-container{
+  flex-grow: 1;
+}
+
+.page-container{
+  margin: 0 auto;
+  width: 1170px;
 }
 
 .button{
@@ -61,6 +78,33 @@ body {
   color: #2D3440;
 }
 
+.navigation-header{
+  display: flex;
+  flex-direction: row;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.logo-header{
+  margin-right: 32px;
+}
+
+.navigation-list{
+  width: 638px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user{
+  max-width: 267px;
+  margin-left: auto;
+}
+
+.contacts-phone-container{
+  max-width: 148px;
+  margin-left: auto;
+}
+
 .navigation-link {
   color:inherit;
   font-family: "Inter", sans-serif;
@@ -81,7 +125,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  line-height: 20px;
   color: inherit;
   text-decoration: none;
   text-align: center;
@@ -99,7 +142,6 @@ body {
   font-weight: 900;
   font-size: 36px;
   font-style: normal;
-  color: #2D3440;
   line-height: 46px;
 }
 .slider-description {
@@ -107,7 +149,25 @@ body {
   line-height: 24px;
 }
 
+.slider-list{
+margin: 0;
+padding: 0;
+text-align: left;
+color: #2D3440;
+}
+
 /* banner */
+
+.banner-list{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.banner-item{
+  width:570px;
+}
 
 .banner-item:first-child{
   background: #FF7799 url(../images/background-berry.png) no-repeat 351px;
@@ -133,7 +193,14 @@ body {
 
 /* product */
 
+.product-list{
+  width: 1170px;
+  margin: 0;
+  padding: 0;
+}
+
 .product-card {
+  width: 270px;
   background: #FCFCFC;
 }
 
@@ -190,11 +257,34 @@ background-color:#FFFFFF;
   color: #565C66;
 }
 
+.advantages-list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1042px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.advantages-item{
+  width: 506px;
+}
 /* additional */
+
+.additional-container{
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.additional-item{
+  width: 570px;
+}
 
 .news{
   background: url(../images/background-news.png) no-repeat;
 }
+
 .news-title {
   font-weight: 700;
   font-size: 24px;
@@ -216,8 +306,23 @@ background-color:#FFFFFF;
 
 /* delivery */
 
-.delivery{
+.delivery-container{
+  display: flex;
+  width: 1170;
+  margin:0;
+  padding: 0;
   background: url(../images/background-delivery.png) no-repeat;
+}
+
+.delivery-section{
+  width: 371px;
+  margin: 0 auto;
+}
+
+.delivery-form-section{
+  background-color: #FCFCFC;
+  width: 500px;
+  margin-left: auto;
 }
 
 .delivery-title{
@@ -233,12 +338,15 @@ background-color:#FFFFFF;
 
 /* address */
 
-.adress{
+.address-container{
+  width: 1170px;
   background: url(../images/background-contacts.jpg);
 }
 
 .contacts{
   background-color: #FCFCFC;
+  margin-left: 64px;
+  width: 343px;
 }
 
 .contacts-description {
@@ -273,6 +381,28 @@ background-color:#FFFFFF;
   color:#2D3440;
 }
 
+.page-footer-container{
+  display: flex;
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.social-footer{
+  max-width: 220px;
+  margin-right: auto;
+}
+
+.footer-navigation-list{
+  max-width: 356px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-logo{
+  max-width: 200px;
+  margin-left: auto;
+}
+
 .footer-navigation-link{
   font-weight: 400;
   font-size: 14px;
@@ -301,15 +431,36 @@ background-color:#FFFFFF;
   line-height: 46px;
 }
 
+.catalog-products{
+  display: flex;
+  width: 823px;
+}
+
+.catalog-filter-container{
+  display: flex;
+  width: 805px;
+}
+
+.catalog-filter-button{
+  margin-left: 16px;
+}
+
 /* breadcrumbs */
 
 .breadcrumbs{
   color:inherit
 }
+
 .breadcrumbs-link{
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.breadcrumbs-item:last-child{
+  text-decoration: underline;
 }
 
 .control-label{
@@ -319,6 +470,12 @@ background-color:#FFFFFF;
 }
 
 /* pagination */
+
+.pagination-container{
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
 
 .pagination-link{
   line-height: 20px;
