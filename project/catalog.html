@@ -10,46 +10,49 @@
 
   <body>
     <header class="page-header">
-      <a class="logo-link" href="index.html">
-        <img class="logo-image" src="images/logo.svg" width="137" height="56" alt="Логотип компании Glassy Shop">
-      </a>
       <nav class="navigation-header" aria-label="основная">
+        <div class="logo-header">
+          <a class="logo-link" href="index.html">
+            <img class="logo-image" src="images/logo.svg" width="137" height="56" alt="Логотип компании Glassy Shop">
+          </a>
+        </div>
         <ul class="navigation-list">
-          <li class="navigation-list-item">
+          <li class="navigation-item">
             <button class="navigation-link navigation-button" type="button">
               Каталог
             </button>
           </li>
-          <li class="navigation-list-item">
+          <li class="navigation-item">
             <a class="navigation-link" href="#">
               Доставка и оплата
             </a>
           </li>
-          <li class="navigation-list-item">
+          <li class="navigation-item">
             <a class="navigation-link" href="#">О компании</a>
           </li>
         </ul>
+        <a class="contacts-phone-link contacts-phone-container" href="tel:+78005558628">+7 800 555-86-28</a>
+        <ul class="navigation-list navigation-user">
+          <li class="user-panel-item">
+            <button class="user-panel-button search-button" type="button">
+              <span class="visually-hidden">Поиск</span>
+            </button>
+          </li>
+          <li class="user-panel-item">
+            <button class="user-panel-button sign-in-button" type="button">
+              Вход
+            </button>
+          </li>
+          <li class="user-panel-item">
+            <button class="user-panel-button" type="button">
+              <span class="visually-hidden">Корзина</span>
+            </button>
+          </li>
+        </ul>
       </nav>
-      <a class="contacts-phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
-      <ul class="user-panel-list">
-        <li class="user-panel-item">
-          <button class="user-panel-button search-button" type="button">
-            <span class="visually-hidden">Поиск</span>
-          </button>
-        </li>
-        <li class="user-panel-item">
-          <button class="user-panel-button sign-in-button" type="button">
-            Вход
-          </button>
-        </li>
-        <li class="user-panel-item">
-          <button class="user-panel-button" type="button">
-            <span class="visually-hidden">Корзина</span>
-          </button>
-        </li>
-      </ul>
     </header>
-    <main class="main-inner">
+    <main class="main-inner main-container">
+      <div class="page-container">
       <header class="inner-header">
         <ol class="breadcrumbs-list">
           <li class="breadcrumbs-item">
@@ -59,16 +62,16 @@
             <a class="breadcrumbs-link">Каталог</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-item">Сливочное мороженое</a>
+            <a class="breadcrumbs-link">Сливочное мороженое</a>
           </li>
         </ol>
         <h1 class="inner-header-title">Сливочное мороженое</h2>
       </header>
       <section class="catalog-products">
-        <h2 class="visually-hidden">Фильтр для товаров</h2>
+        <h2 class="visually-hidden" hidden>Фильтр для товаров</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
-            <legend class="visually-hidden catalog-filter-title">
+            <legend class="visually-hidden">
               Фильтр:
             </legend>
             <label class="control-label">Сортировка:
@@ -94,8 +97,9 @@
               <input class="control-input" type="radio" name="fat" value="higher 30"> выше 30%
             </label>
           </fieldset>
+          <div class="catalog-filter-container">
           <fieldset class="catalog-fieldset">
-            <legend class="catalog-filter-title">
+            <legend class="visually-hidden">
               Наполнители:
             </legend>
             <label class="control-label">
@@ -114,8 +118,8 @@
               <input class="control-input" type="checkbox" value="yes" name="jam"> Джемы
             </label>
           </fieldset>
-          <button type="submit" class="button button-apply">Применить</button>
-
+          <button type="submit" class="button catalog-filter-button">Применить</button>
+        </div>
         </form>
       </section>
       <section class="catalog">
@@ -254,6 +258,8 @@
             </div>
           </li>
         </ul>
+        <div class="pagination-container">
+          <button class="button pagination-button" type="button">Показать ещё</button>
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-prev pagination-disabled">
@@ -281,45 +287,50 @@
             </a>
           </li>
         </ul>
-        <button class="button pagination-show-more" type="button">Показать ещё</button>
+
+      </div>
       </section>
-    </main>
-  </body>
-  <footer class="page-footer">
-    <section class="social-footer">
-      <h2 class="visually-hidden">Наши социальные сети</h2>
-      <ul class="social-list">
-        <li class="social-item">
-          <a class="social-button" href="#"><span class="visually-hidden">Telegram</span></a>
-        </li>
-        <li class="social-item ">
-          <a class="social-button" href="#"><span class="visually-hidden">VK</span></a>
-        </li>
-        <li class="social-item">
-          <a class="social-button" href="#"><span class="visually-hidden">YouTube</span></a>
-        </li>
-      </ul>
-    </section>
-    <nav class="footer-navigatiion" aria-label="дополнительная">
-      <ul class="footer-navigation-list">
-        <li class="footer-navigation-item">
-          <a class="footer-navigation-link suppliers" href="#">Для поставщиков</a>
-        </li>
-        <li class="footer-navigation-item">
-          <a class="footer-navigation-link" href="#">Наши документы</a>
-        </li>
-        <li class="footer-navigation-item">
-          <a class="footer-navigation-link" href="#">О производстве</a>
-        </li>
-        <li class="footer-navigation-item">
-          <a class="footer-navigation-link" href="#">Экологические стандарты</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="footer-logo">
-      <img class="html-logo" src="images/logo_htmlacademy.svg" width="93" height="27" alt="Логотип академии">
-      <p class="footer-caption">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">.html academy</a> © 2021</p>
     </div>
-  </footer>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer-container">
+        <section class="social-footer">
+          <h2 class="visually-hidden social-footer-title">Cоциальные сети</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="social-button" href="#"><span class="visually-hidden">Telegram</span></a>
+            </li>
+            <li class="footer-social-item">
+              <a class="social-button" href="#"><span class="visually-hidden">VK</span></a>
+            </li>
+            <li class="footer-social-item">
+              <a class="social-button" href="#"><span class="visually-hidden">YouTube</span></a>
+            </li>
+          </ul>
+        </section>
+        <nav class="footer-navigatiion" aria-label="дополнительная">
+          <ul class="footer-navigation-list">
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-link suppliers" href="#">Для поставщиков</a>
+            </li>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-link" href="#">Наши документы</a>
+            </li>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-link" href="#">О производстве</a>
+            </li>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-link" href="#">Экологические стандарты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-logo">
+          <img class="html-logo" src="images/logo_htmlacademy.svg" width="93" height="27" alt="Логотип академии">
+          <p class="footer-caption">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">.html academy</a> ©
+            2021</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 
 </html>
