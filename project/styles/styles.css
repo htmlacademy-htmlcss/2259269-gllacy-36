@@ -261,8 +261,6 @@ background-color:#FFFFFF;
   display: flex;
   flex-wrap: wrap;
   width: 1042px;
-  margin: 0 auto;
-  padding: 0;
 }
 
 .advantages-item{
@@ -273,8 +271,6 @@ background-color:#FFFFFF;
 .additional-container{
   display: flex;
   justify-content: space-between;
-  width: 1170px;
-  margin: 0 auto;
 }
 
 .additional-item{
@@ -308,15 +304,13 @@ background-color:#FFFFFF;
 
 .delivery-container{
   display: flex;
-  width: 1170;
-  margin:0;
+  margin:0 auto;
   padding: 0;
   background: url(../images/background-delivery.png) no-repeat;
 }
 
 .delivery-section{
   width: 371px;
-  margin: 0 auto;
 }
 
 .delivery-form-section{
@@ -339,7 +333,6 @@ background-color:#FFFFFF;
 /* address */
 
 .address-container{
-  width: 1170px;
   background: url(../images/background-contacts.jpg);
 }
 
@@ -389,7 +382,7 @@ background-color:#FFFFFF;
 
 .social-footer{
   max-width: 220px;
-  margin-right: auto;
+  margin-right: 260px;
 }
 
 .footer-navigation-list{
@@ -473,8 +466,6 @@ background-color:#FFFFFF;
 
 .pagination-container{
   display: flex;
-  width: 1170px;
-  margin: 0 auto;
 }
 
 .pagination-link{
