@@ -79,6 +79,21 @@ body {
 
 .social-list{
   list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.social-item{
+  min-width: 24px;
+  min-height: 24px;
+  margin-left: 16px;
+  background-color: #FCFCFC;
+}
+
+
+.social-item:first-child{
+  margin-left: 0;
 }
 
 .button-submit{
@@ -101,9 +116,6 @@ body {
   flex-direction: row;
   width: 1170px;
   margin: 0 auto;
-}
-
-.logo-header{
 }
 
 .logo-link{
@@ -198,11 +210,15 @@ body {
   font-size: 36px;
   font-style: normal;
   line-height: 46px;
+  margin: 0 ;
+  padding: 0;
 }
 .slider-description {
   max-width: 429px;
   font-size: 18px;
   line-height: 24px;
+  margin-bottom: 48px;
+  padding: 0;
 }
 
 .slider-list{
@@ -214,7 +230,40 @@ list-style-type: none;
 }
 
 .slider-item{
+  display: flex;
+  width: 1100px;
   margin-left: 70px;
+}
+
+.slider-container{
+  margin: 136px 5px 0 0;
+}
+
+.slider-pagination-list{
+  width: 52px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slider-pagination-item{
+  margin-right: 8px;
+}
+
+.slider-pagination-link{
+  display: block;
+  padding: 6px;
+  background-color: #FCFCFC;
+}
+
+.slider-pagination-item:last-child{
+  margin: 0;
+}
+
+.slider-other{
+  display: flex;
+  justify-content: space-between;
 }
 
 /* banner */
