@@ -495,8 +495,20 @@ list-style-type: none;
   background: url(../images/background-delivery.png) no-repeat;
 }
 
+.delivery .button-submit{
+  grid-column: -2 / -1;
+  justify-self: start;
+  width: 152px;
+  height: 44px;
+}
+
 .delivery-item{
  width: 371px;
+}
+
+.delivery-label{
+  display: flex;
+  flex-direction: column;
 }
 
 .delivery-form-section{
@@ -506,11 +518,25 @@ list-style-type: none;
   padding: 40px;
 }
 
+.delivery-form{
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+}
+
+.delivery-address{
+  grid-column: 1 / -1;
+}
+
 .delivery-title{
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   color: #2D3440;
+}
+
+.delivery-label-title{
+  font-weight: 700;
 }
 
 .delivery-description {
