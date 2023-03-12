@@ -240,6 +240,7 @@ list-style-type: none;
 .slider-pagination-list{
   width: 52px;
   display: flex;
+  align-items: flex-end;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -315,8 +316,12 @@ list-style-type: none;
 /* Карточки в грид */
 
 .product-list{
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 40px 30px;
   width: 1170px;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
 }
 
@@ -329,8 +334,7 @@ list-style-type: none;
   width: 190px;
   background: #FCFCFC;
   list-style-type: none;
-  padding: 0 40px 28px 40px;
-  margin-bottom: 40px;
+  padding: 0 40px 24px 40px;
 }
 
 .product-title {
@@ -491,8 +495,20 @@ list-style-type: none;
   background: url(../images/background-delivery.png) no-repeat;
 }
 
+.delivery .button-submit{
+  grid-column: -2 / -1;
+  justify-self: start;
+  width: 152px;
+  height: 44px;
+}
+
 .delivery-item{
  width: 371px;
+}
+
+.delivery-label{
+  display: flex;
+  flex-direction: column;
 }
 
 .delivery-form-section{
@@ -502,11 +518,25 @@ list-style-type: none;
   padding: 40px;
 }
 
+.delivery-form{
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+}
+
+.delivery-address{
+  grid-column: 1 / -1;
+}
+
 .delivery-title{
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   color: #2D3440;
+}
+
+.delivery-label-title{
+  font-weight: 700;
 }
 
 .delivery-description {
@@ -617,6 +647,9 @@ list-style-type: none;
 /* Навигацию в грид */
 
 .footer-navigation-list{
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 8px;
   width: 356px;
   list-style-type: none;
   margin-top: 0;
@@ -630,7 +663,8 @@ list-style-type: none;
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
-  padding: 4px;
+  margin: 0;
+  padding: 0;
 }
 
 .suppliers{
