@@ -577,7 +577,7 @@ body {
 }
 
 .slider-left-content{
-  margin: 136px 21px 0 0;
+  margin-top: 136px;
 }
 
 .slider-pagination-list{
@@ -686,8 +686,8 @@ body {
   gap: 91px 30px;
   width: 1170px;
   margin: 0;
-  margin-bottom: 40px;
   padding: 0;
+  padding-bottom: 40px;
 }
 
 .product-card-image{
@@ -695,7 +695,7 @@ body {
   display: block;
   top: -50%;
   right: 51px;
-  transform: translateY(50%);
+  transform: translateY(52%);
   border-radius: 50%;
   filter: drop-shadow(0px 4px 12px rgba(45, 52, 64, 0.1));
 }
@@ -807,6 +807,7 @@ body {
 
 .advantages-background{
   width: 1122px;
+  margin-top: 40px;
   margin-bottom: 80px;
   padding: 24px;
   background: url(../images/background-advantages.png) no-repeat;
@@ -814,7 +815,6 @@ body {
 
 .advantages-container{
   width: 1042px;
-  margin: 0;
   padding: 56px 40px;
   border-radius: 16px;
   background-color:#FFFFFF;
@@ -920,6 +920,7 @@ body {
   border-radius: 16px;
 }
 
+
 .appoitment-description {
   width: 506px;
   color: #565C66;
@@ -942,6 +943,7 @@ body {
   grid-column: -2 / -1;
   justify-self: start;
   width: 152px;
+  margin-top: 12px;
 }
 
 .delivery-item{
@@ -949,7 +951,14 @@ body {
  padding-top: 79px;
 }
 
-.delivery-label{
+.delivery-info{
+  margin: 0;
+  margin-bottom: 32px;
+  color: #565C66;
+}
+
+.delivery-label, .delivery-field-group{
+  margin: 0;
   display: flex;
   flex-direction: column;
 }
@@ -981,11 +990,6 @@ body {
   margin: 24px 0;
 }
 
-.delivery-label-title{
-  display: flex;
-  font-weight: 700;
-  padding-bottom: 8px;
-}
 
 .delivery-description {
   color: #565C66;
@@ -1008,9 +1012,14 @@ body {
   border-radius: 8px;
 }
 
+.contacts-list{
+  margin: 0;
+  padding: 0;
+}
+
 .contacts-description {
   width: 250px;
-  margin: 12px 0;
+  margin: 11px 0;
   padding: 0;
   color: #565C66;
 }
@@ -1020,14 +1029,17 @@ body {
 }
 
 .contacts-description:last-child{
-  margin-bottom: 32px;
+  margin-bottom: 12px;
 }
 
 .contacts-address {
+  width: 263px;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  color: #2D3440;
+  padding-bottom: 12px;
 }
 
 .contacts-phone {
@@ -1146,7 +1158,12 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  margin: 18px 0;
+  margin: 7px 0;
+}
+
+.footer-logo-link{
+  text-decoration: none;
+  border-bottom: 1px solid rgba(45, 52, 64, 0.5);
 }
 
 /* catalog */
@@ -1199,10 +1216,11 @@ body {
 
 .catalog-filter-list{
   display: flex;
+  justify-content: space-between;
   list-style-type: none;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 18px;
-  padding: 8px 2px;
+  padding: 8px 0px;
   margin: 0;
 }
 
@@ -1227,8 +1245,8 @@ body {
 /* select */
 
 .control-group{
-  width: 100%;
-  padding: 9px 40px 9px 16px;
+  width: 198px;
+  padding: 7px 40px 7px 16px;
   margin: 0;
   font: inherit;
   font-weight: 400;
@@ -1369,6 +1387,7 @@ body {
   display: flex;
   list-style-type: none;
   padding: 0;
+  margin-top: 32px;
   margin-bottom: 16px;
 }
 
@@ -1376,7 +1395,7 @@ body {
   background: url(../images/icon/chevrons-right.svg) no-repeat;
   background-position: right center;
   background-size: 12px 12px;
-  margin-right: 11px;
+  margin-right: 7px;
 }
 
 .breadcrumbs-link{
@@ -1386,11 +1405,14 @@ body {
   line-height: 20px;
   color: inherit;
   text-decoration: none;
-  margin-right: 24px;
+  margin-right: 21px;
+}
+
+.breadcrumbs-current{
+  border-bottom: 1px solid #2D3440;
 }
 
 .breadcrumbs-item:last-child{
-  text-decoration: underline;
   background: none;
 }
 
@@ -1408,8 +1430,8 @@ body {
 .pagination-container{
   display: flex;
   align-items: center;
-  padding-top: 17px;
-  padding-bottom: 80px;
+  padding-top: 10px;
+  padding-bottom: 74px;
   border-bottom: 1px solid rgba(252, 252, 252, 0.3);
 }
 
@@ -1481,7 +1503,8 @@ body {
 
 .pagination-button{
   display: inline-block;
-  margin-left: 490px;
+  width: 179px;
+  margin-left: 488px;
 }
 
 /* forms */
@@ -1527,7 +1550,7 @@ body {
 }
 
 .appoitment-form .field{
-  width: 290px;
+  width: 332px;
   margin-right: 18px;
 }
 
@@ -1547,7 +1570,7 @@ body {
 .popover-catalog{
   position: absolute;
   top: 100%;
-  left: -50%;
+  left: -66px;
   transform: translateX(50%);
   z-index: 1;
   box-sizing: border-box;
@@ -1601,7 +1624,7 @@ body {
 
 .popover-catalog-item:first-child{
   font-weight: 700;
-  margin-bottom: 2px;
+  padding-bottom: 2px;
 }
 
 .popover-catalog-decorative{
@@ -1904,6 +1927,13 @@ body {
   display: block;
 }
 
+.form-label{
+    margin: 0;
+    font-weight: 700;
+    padding-bottom: 4px;
+    display: flex;
+}
+
 .form-label-icon{
   position: relative;
   padding-right: 16px;
@@ -1939,7 +1969,7 @@ body {
     width: 14px;
     height: 14px;
     top: 14px;
-    left: -8;
+    left: -8px;
     position: absolute;
     background-color: #FCFCFC;
     border-bottom: 1px solid #B9B9B9;
