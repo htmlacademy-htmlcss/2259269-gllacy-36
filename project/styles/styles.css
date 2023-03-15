@@ -1635,7 +1635,7 @@ body {
 }
 
 .popover-search .field{
-  width: 292px;
+  width: 100%;
 }
 
 /* popover sign-in */
@@ -1842,7 +1842,7 @@ body {
 }
 
 .modal-container{
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
