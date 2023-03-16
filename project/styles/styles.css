@@ -693,9 +693,8 @@ body {
 .product-card-image{
   position: absolute;
   display: block;
-  top: -50%;
+  top: -51px;
   right: 51px;
-  transform: translateY(52%);
   border-radius: 50%;
   filter: drop-shadow(0px 4px 12px rgba(45, 52, 64, 0.1));
 }
@@ -743,7 +742,7 @@ body {
 }
 
 .product-price {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   margin: 0;
@@ -1364,17 +1363,18 @@ body {
   display: none;
 }
 
-.control-marker .control-marker-checked, .control-marker .control-marker-unchecked {
+.control-marker-checked, .control-marker-unchecked {
   fill: #2D3440;
 }
 
-.control-marker:hover .control-marker-checked, .control-marker:hover .control-marker-unchecked {
+.control-label:hover .control-marker-checked, .control-label:hover .control-marker-unchecked {
   fill: #FCFCFC;
 }
 
-.control-marker:disabled .control-marker-checked, .control-marker:disabled .control-marker-unchecked {
+.control-label:disabled .control-marker-checked, .control-label:disabled .control-marker-unchecked {
   fill: rgba(45, 52, 64, 0.5);
 }
+
 
 /* breadcrumbs */
 
