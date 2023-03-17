@@ -1371,6 +1371,11 @@ body {
   fill: #FCFCFC;
 }
 
+.control-input:focus + .control-marker .control-marker-checked,
+.control-input:focus + .control-marker .control-marker-unchecked {
+  fill: #FCFCFC;
+}
+
 .control-label:disabled .control-marker-checked, .control-label:disabled .control-marker-unchecked {
   fill: rgba(45, 52, 64, 0.5);
 }
